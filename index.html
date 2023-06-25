@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demand Forecasting System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+ <header>
+    <div class="header-icon">
+      <img src="icon.png" alt="Icon">
+    </div>
+    <h1 class="header-title">BuyCycle</h1>
+  </header>    
+    <h1><center>Demand Forecasting System</center></h1>
+    <div id="selections">
+        <label for="month">Select Month:</label>
+        <select id="month">
+            <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+            <!-- Add other months here -->
+        </select>
+
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="Accesories">Accesories</option>
+        <option value="Brake">Brake</option>
+        <option value="Cleat Shoes">Cleat Shoes</option>
+        <option value="Calipher">Calipher</option>
+        <option value="Cogs">Cogs</option>
+        <option value="Fender">Fender</option>
+        <option value="Groupset">Groupset</option>
+        <option value="Helmet">Helmet</option>
+        <option value="Non-Cleat Shoes">Non-Cleat Shoes</option>
+        <option value="Pedals">Pedals</option>
+            <!-- Add other categories here -->
+        </select>
+
+        <label for="product">Select Product:</label>
+        <select id="product">
+            <option value="S-Fight Cleat Choes Philippine Edition">S-Fight Cleat Choes Philippine Edition</option>
+            <option value="Shimano Tiagra Rear Derailleuer 10 Speed">Shimano Tiagra Rear Derailleuer 10 Speed</option>
+            <option value="Giro MIPS Aerodynamics Helmet">Giro MIPS Aerodynamics Helmet</option>
+            <option value="Giro MIPS Aerodynamics Helmet">Giro MIPS Aerodynamics Helmet</option>
+            <option value="Merino Compression Cycling Socks">Merino Compression Cycling Socks</option>
+            <option value="Shimano Stainless Chain">Shimano Stainless Chain</option>
+            <option value="Shimano Dura 12 Speed Groupset">Shimano Dura 12 Speed Groupset</option>
+            <option value="Bike Rock Bros Backlight 150 Lumens">Bike Rock Bros Backlight 150 Lumens</option>
+            <option value="Ass Saver Fender Splash Protection">Ass Saver Fender Splash Protection</option>
+            <option value="Bike Rock Bros Backlight 150 Lumens">Bike Rock Bros Backlight 150 Lumens</option>
+            <option value="RNOX Bike Protection Helmet">RNOX Bike Protection Helmet</option>
+            <option value="Cyclismo Cycling Air Breathable Cap">Cyclismo Cycling Air Breathable Cap</option>
+            <option value="Ragusa Mechanical Brakeset">Ragusa Mechanical Brakeset</option>
+            <option value="Xoss G+ Mount Extender Bar Fly">Xoss G+ Mount Extender Bar Fly</option>
+            <option value="Ultegra Lightweight Crank">Ultegra Lightweight Crank</option>
+            <option value="Toseek Carbon Water Cage">Toseek Carbon Water Cage</option>
+            <option value="Ragusa Thermal Cycling Bottle">Ragusa Thermal Cycling Bottle</option>
+            <option value="Tirich Alloy 700 Road Bike">Tirich Alloy 700 Road Bike</option>
+            <option value="Rock Bros Cycling Gloves">Rock Bros Cycling Gloves</option>
+            <option value="Sunpeed Triton Road Bike">Sunpeed Triton Road Bike</option>
+            <option value="Santic Non-Clip Cycling Shoes">Santic Non-Clip Cycling Shoes</option>
+            <option value="Maxxis Trident 27 Wheel">Maxxis Trident 27 Wheel</option>
+            <option value="Continental Gatorskin Road Bike Wheel">Continental Gatorskin Road Bike Wheel</option>
+            <option value="Santic UV Cycling Shades">Santic UV Cycling Shades</option>
+            <option value="Ragusa Road Bike Aero Drop Bar">Ragusa Road Bike Aero Drop Bar</option>
+            <option value="Ragusa Road Bike Bar Tape">Ragusa Road Bike Bar Tape</option>
+            <option value="Ragusa Rigid Road Bike Fork">Ragusa Rigid Road Bike Fork</option>
+            <option value="Ragusa Fender Splash Protection">Ragusa Fender Splash Protection</option> 
+            <!-- Add other products here -->
+        </select>
+
+        <button onclick="generateChart()">Generate Chart</button>
+    </div>
+
+    <div id="chartContainer">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
